@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinidu | Expert Web Development Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">Pinidu<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn btn-primary nav-btn">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Custom Web Solutions Built for <span>Impact</span></h1>
+      <p>High-performance, modern websites designed with tailored HTML, CSS, and JavaScript. Fast turnaround, pristine code, and maximum conversion.</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn btn-primary">Explore Services</a>
+        <a href="#contact" class="btn btn-secondary">Contact Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2 class="section-title">Our Market Offerings</h2>
+    <div class="grid services-grid">
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Landing Page Design</h3>
+        <p>High-converting single-page websites tailored for products, launches, and lead capture.</p>
+        <div class="price">Starting at $299</div>
+      </div>
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Full Web App Development</h3>
+        <p>Scalable, interactive, and custom web applications tailored to business logic.</p>
+        <div class="price">Starting at $899</div>
+      </div>
+      <div class="card">
+        <div class="icon">🛒</div>
+        <h3>E-Commerce Store</h3>
+        <p>Custom online shop fronts optimized for conversions, speed, and seamless checkout.</p>
+        <div class="price">Starting at $699</div>
+      </div>
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Performance Optimization</h3>
+        <p>Speed up existing websites, improve Core Web Vitals, and boost SEO rankings.</p>
+        <div class="price">Starting at $199</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2 class="section-title">Past Projects</h2>
+    <div class="filter-btns">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="ecom">E-Commerce</button>
+    </div>
+    <div class="grid portfolio-grid">
+      <div class="portfolio-card" data-category="web">
+        <div class="portfolio-img"></div>
+        <div class="portfolio-info">
+          <h3>SaaS Dashboard</h3>
+          <p>Interactive platform built with modern UI standards.</p>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="ecom">
+        <div class="portfolio-img"></div>
+        <div class="portfolio-info">
+          <h3>Urban Apparel Shop</h3>
+          <p>High-speed e-commerce solution with custom filters.</p>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="web">
+        <div class="portfolio-img"></div>
+        <div class="portfolio-info">
+          <h3>Fintech Web Portal</h3>
+          <p>Secure web application with real-time analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2 class="section-title">Interactive Project Estimator</h2>
+    <div class="calculator">
+      <div class="calc-option">
+        <label for="pages">Number of Pages:</label>
+        <select id="pages">
+          <option value="1">1 Page (Landing Page)</option>
+          <option value="3">2 - 5 Pages</option>
+          <option value="7">6 - 10 Pages</option>
+          <option value="12">10+ Pages</option>
+        </select>
+      </div>
+      <div class="calc-checkboxes">
+        <label><input type="checkbox" id="responsive" checked disabled /> Responsive Design (Included)</label>
+        <label><input type="checkbox" id="ecommerce" class="calc-check" value="300" /> E-Commerce Functionality (+$300)</label>
+        <label><input type="checkbox" id="seo" class="calc-check" value="150" /> Advanced SEO Setup (+$150)</label>
+        <label><input type="checkbox" id="speed" class="calc-check" value="100" /> Speed & Performance Optimization (+$100)</label>
+      </div>
+      <div class="calc-result">
+        Estimated Cost: $<span id="total-price">200</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Pinidu</h2>
+    <p>Pinidu is a modern boutique web engineering agency dedicated to crafting lightweight, ultra-fast, and visually striking websites. Eliminating bloated templates to write tailored, responsive code that drives business conversion.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <form id="contact-form" class="contact-form" novalidate>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <select id="project-type" required>
+        <option value="" disabled selected>Select Project Type</option>
+        <option value="landing">Landing Page</option>
+        <option value="webapp">Full Web App</option>
+        <option value="ecommerce">E-Commerce Store</option>
+        <option value="optimization">Optimization</option>
+      </select>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <div id="toast" class="toast">Message sent successfully!</div>
+
+  <footer>
+    <p>&copy; 2026 Pinidu. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
